@@ -1,4 +1,5 @@
-﻿namespace AppSettingsFile
+﻿using w001.AppSettingsFile.Configuration;
+namespace w001.AppSettingsFile
 {
     public partial class MainPage : ContentPage
     {
@@ -7,19 +8,11 @@
         public MainPage()
         {
             InitializeComponent();
+            var settings = MauiProgram.Services.GetService<AppSettings>();
+            MyLabel.Text = settings?.WelcomeMessage ?? "Default text";
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
+        
     }
 
 }

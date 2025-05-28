@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Configuration\AppSettings.cs" />
+    <Compile Remove="Configuration\AppSettingsRegistrar.cs" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+	</ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <PackagePath>contentFiles\\any</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+    <Content Include="Configuration\AppSettings.cs">
+      <PackagePath>contentFiles\\any\\Configuration</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+    <Content Include="Configuration\AppSettingsRegistrar.cs">
+      <PackagePath>contentFiles\\any\\Configuration</PackagePath>
+      <Pack>true</Pack>
+    </Content>
+  </ItemGroup>
+
+</Project>

@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace w001.AppSettingsFile
+namespace w002.ShellFactory
 {
     internal class Program : MauiApplication
     {

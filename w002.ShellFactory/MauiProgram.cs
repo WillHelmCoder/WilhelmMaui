@@ -1,18 +1,12 @@
-﻿using w001.AppSettingsFile.Configuration;
-using Microsoft.Extensions.Logging;
-using System.Text.Json;
+﻿using Microsoft.Extensions.Logging;
 
-
-namespace w001.AppSettingsFile
+namespace w002.ShellFactory
 {
     public static class MauiProgram
     {
-        public static IServiceProvider Services { get; private set; }
-
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
-
             builder
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
@@ -21,17 +15,11 @@ namespace w001.AppSettingsFile
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-            //Añade configuración de AppSettings desde un archivo JSON
-            builder.Services.AddAppSettings();
-
 #if DEBUG
-            builder.Logging.AddDebug(); 
+    		builder.Logging.AddDebug();
 #endif
 
-            var app = builder.Build(); 
-            Services = app.Services;
-
-            return app;
+            return builder.Build();
         }
     }
 }

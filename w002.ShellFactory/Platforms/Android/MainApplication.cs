@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace w001.AppSettingsFile
+namespace w002.ShellFactory
 {
     [Application]
     public class MainApplication : MauiApplication

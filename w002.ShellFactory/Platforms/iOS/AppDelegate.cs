@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace w001.AppSettingsFile
+namespace w002.ShellFactory
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

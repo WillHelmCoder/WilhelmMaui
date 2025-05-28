@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace w001.AppSettingsFile
+namespace w002.ShellFactory
 {
     public class Program
     {

@@ -1,4 +1,4 @@
-﻿namespace w001.AppSettingsFile
+﻿namespace w002.ShellFactory
 {
     public partial class AppShell : Shell
     {

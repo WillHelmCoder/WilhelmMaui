@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="w001.AppSettingsFile.AppShell"
+    x:Class="w002.ShellFactory.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:w001.AppSettingsFile"
+    xmlns:local="clr-namespace:w002.ShellFactory"
     Shell.FlyoutBehavior="Disabled"
-    Title="w001.AppSettingsFile">
+    Title="w002.ShellFactory">
 
     <ShellContent
         Title="Home"
