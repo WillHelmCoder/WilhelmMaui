@@ -7,38 +7,39 @@ namespace w002.ShellFactory.ShellCompositions
     {
         public OpenShell()
         {
-            Routing.RegisterRoute("SettingsPage", typeof(PremiumPage));
-            Routing.RegisterRoute("ManageAccountPage", typeof(ListPage));
-            Routing.RegisterRoute("Profile", typeof(HomePage));
+            // Registrar las rutas
+            Routing.RegisterRoute("OpenPage", typeof(HomePage));
+            Routing.RegisterRoute("ListPage", typeof(ListPage));
 
-            Items.Add(new Tab
+            // Crear el tab principal con HomePage
+            var homeTab = new Tab
             {
-                Title = "OpenShell",
-                Icon = "dashboard.png",
-                Items =
-            {
-                new ShellContent
-                {
-                    ContentTemplate = new DataTemplate(typeof(OpenShell)),
-                    Route = "AdminDashboard"
-                }
-            }
-            });
-
-            var listTab = new Tab
-            {
-                Title = "ListPage",
-                Icon = "profile.png",
-                Items =
-            {
-                new ShellContent
-                {
-                    ContentTemplate = new DataTemplate(typeof(ListPage)),
-                    Route = "ProfilePage"
-                }
-            }
+                Title = "OpenPage",
+                Icon = "dashboard.png"
             };
 
+            homeTab.Items.Add(new ShellContent
+            {
+                Title = "OpenPage",
+                ContentTemplate = new DataTemplate(typeof(HomePage)),
+                Route = "OpenPage"
+            });
+
+            // Crear otro tab con ListPage
+            var listTab = new Tab
+            {
+                Title = "Lista",
+                Icon = "profile.png"
+            };
+            listTab.Items.Add(new ShellContent
+            {
+                Title = "Listado",
+                ContentTemplate = new DataTemplate(typeof(ListPage)),
+                Route = "ListPage"
+            });
+
+            // Agregar los tabs al Shell
+            Items.Add(homeTab);
             Items.Add(listTab);
         }
     }
