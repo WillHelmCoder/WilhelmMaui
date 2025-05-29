@@ -21,9 +21,9 @@ Each project is prefixed with:
 
 | Project Name                                                                 | Type         | Description                                                   |
 |------------------------------------------------------------------------------|--------------|---------------------------------------------------------------|
-| [`w001-AppSettings`](./w001-AppSettings/README.md)                           | Educational  | A simple demo of how to load and use `appsettings.json`.      |
-| [`w002-ShellFactory`](./w002-ShellFactory/README.md)                         | Educational  | Demonstrates using an enum and factory for dynamic Shells.    |
-| [`w003-T1-AuthShellApp`](./w003-T1-AuthShellApp/README.md)                   | Template     | A production-ready shell-based structure with DI and routing. |
+| [`w001-AppSettings`](./ADR-w001.md/)                           | Educational  | A simple demo of how to load and use `appsettings.json`.      |
+| [`w002-ShellFactory`](./ADR-w002.md/)                         | Educational  | Demonstrates using an enum and factory for dynamic Shells.    |
+| [`w003-T1-AuthShellApp`](./ADR-w001.md)                   | Template     | A production-ready shell-based structure with DI and routing. |
 
 
 ---
