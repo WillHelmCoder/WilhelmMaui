@@ -17,7 +17,7 @@ Each project is prefixed with:
 - A 3-digit number (e.g., `w001`, `w002`, `w010`) – To organize and keep projects sequentially ordered.
 - Optional `-T#` – Denotes **Template** projects ready to reuse as a starting point.
 
-### 🔍 Examples
+### 🔍 Index
 
 | Project Name            | Type         | Description                                                   |
 |-------------------------|--------------|---------------------------------------------------------------|
