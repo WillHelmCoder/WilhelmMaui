@@ -1,31 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<OutputType>Library</OutputType>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>w001.AppSettingsFile.Pkg</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>TuNombre</Authors>
+		<Description>Bootstrap para configurar appsettings.json en proyectos .NET MAUI</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Configuration\AppSettings.cs" />
-    <Compile Remove="Configuration\AppSettingsRegistrar.cs" />
-  </ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
 	</ItemGroup>
-  <ItemGroup>
-    <Content Include="appsettings.json">
-      <PackagePath>contentFiles\\any</PackagePath>
-      <Pack>true</Pack>
-    </Content>
-    <Content Include="Configuration\AppSettings.cs">
-      <PackagePath>contentFiles\\any\\Configuration</PackagePath>
-      <Pack>true</Pack>
-    </Content>
-    <Content Include="Configuration\AppSettingsRegistrar.cs">
-      <PackagePath>contentFiles\\any\\Configuration</PackagePath>
-      <Pack>true</Pack>
-    </Content>
-  </ItemGroup>
+
+	<ItemGroup>
+		<Content Include="appsettings.json" Pack="true" PackagePath="contentFiles\\any" />
+		<Content Include="Configuration\\AppSettings.cs" Pack="true" PackagePath="contentFiles\\any\\Configuration" />
+		<Content Include="Configuration\\AppSettingsRegistrar.cs" Pack="true" PackagePath="contentFiles\\any\\Configuration" />
+		<None Include="README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
 
 </Project>
