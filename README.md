@@ -13,7 +13,7 @@ This repository serves two main purposes:
 
 Each project is prefixed with:
 
-- `w` – Stands for "**workshop**" or "**walkthrough**", meaning it’s part of this educational series.
+- `w` – Stands for "**workshop**" or "**walkthrough**", meaning it’s part of this educational series (Is not from Will <-- hahahaha).
 - A 3-digit number (e.g., `w001`, `w002`, `w010`) – To organize and keep projects sequentially ordered.
 - Optional `-T#` – Denotes **Template** projects ready to reuse as a starting point.
 
