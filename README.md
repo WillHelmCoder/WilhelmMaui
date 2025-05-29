@@ -17,6 +17,15 @@ Each project is prefixed with:
 - A 3-digit number (e.g., `w001`, `w002`, `w010`) – To organize and keep projects sequentially ordered.
 - Optional `-T#` – Denotes **Template** projects ready to reuse as a starting point.
 
+## 🏷️ Project Types
+
+| Prefix     | Meaning                                     |
+|------------|---------------------------------------------|
+| `w###`     | Educational or Demonstrative                |
+| `w###-T#`  | Template. You can start your app from here. |
+
+---
+
 ### 🔍 Index
 
 | Project Name                                                                 | Type         | Description                                                   |
@@ -26,16 +35,11 @@ Each project is prefixed with:
 | [`w003-T1-AuthShellApp`](./ADR-w001.md)                   | Template     | A production-ready shell-based structure with DI and routing. |
 
 
----
 
-## 🏷️ Project Types
 
-| Prefix     | Meaning                                     |
-|------------|---------------------------------------------|
-| `w###`     | Educational or Demonstrative                |
-| `w###-T#`  | Template. You can start your app from here. |
 
 ---
+
 
 ## 📚 ADR Documentation
 
